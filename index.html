@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background-image: url('back.jpg');
+            background-size: cover;
+            font-family: 'poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 50%;
+            max-width: 470px;
+            border: 5px solid black;
+            border-radius: 30px;
+            background: linear-gradient(rgba(0, 247, 247, 0.3), rgb(180, 110, 238));
+            /* height: 500px; */
+            margin: auto;
+        }
+
+        .image {
+            width: 45px;
+
+        }
+
+        #searchBtn {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        .input {
+            margin: 40px;
+            display: flex;
+
+        }
+
+        .city {
+            width: 70%;
+            height: 40px;
+            border-radius: 30px;
+            padding-left: 20px;
+        }
+        .weather-image{
+            width: 120px;
+            margin: auto;
+        }
+       
+        .display{
+            text-align: center;
+            color: white;
+        }
+       .display h1{
+        font-size: 50px;
+        font-weight: 500;
+       }
+    
+       .display h3{
+        font-size: 30px;
+        font-weight: 400;
+        margin-top: -10px;
+       }
+       .details{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:0 60px;
+        margin-top: -10px;
+        margin-bottom: 20px;
+       }
+       .col{
+        display: flex;
+        align-items: center;
+        text-align: left;
+       }
+       .col img{
+        width: 50px;
+        margin-right: 10px;
+       }
+       .col-text{
+        margin-top: -20px;
+       }
+       .humidity, .wind{
+        font-size: 20px;
+        margin-left: -6px;
+       }
+       .error{
+        border: 5px solid red;
+           
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="input">
+            <input class="city" type="text" placeholder="Enter City Name">
+            <button id="searchBtn"><img class="image" src="search.png" alt=""></button>
+        </div>
+        <div class="display">
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
